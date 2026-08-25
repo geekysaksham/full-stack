@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 70%;
+    width: 50%;
+    background-color: #a3a3a358;
+    border-radius: 30px;
+    backdrop-filter: blur(1px);
+}
+
+.loginPage > h1 {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.loginDetail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type = "text"], input[type = "password"] {
+    padding: 18px 15px;
+    border-radius: 10px;
+    border-style: none; 
+    font-size: 16px;
+}
+
+.cta {
+    width: 50%;
+    display: flex;
+    font-weight: 500;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+}
+
+.cta label:hover, .cta input:hover {
+    cursor: pointer;
+}
+
+.cta > a {
+    color: black;
+}
+
+.loginPage > button {
+    padding: 13px 35px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    background: linear-gradient(25deg, #b49dac, #EDE8B5);
+}
+
+.loginPage > button:hover {
+    background: linear-gradient(25deg, #a08e99, #c1be8d);
+    cursor: pointer;
+}
