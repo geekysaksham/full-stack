@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.store {
+    margin: auto;
+    min-height: 100%;
+    width: 62%;
+}
+
+.store > h1 {
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    padding: 20px 0 30px;
+    color: #B72D2C;
+    font-weight: 400;
+}
+
+.shoes {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    height: 100%;
+    width: 31%;
+    border-radius: 10px;
+    padding: 12px 12px 0;
+    box-shadow: 5px 5px 5px rgb(225, 224, 224);
+}
+
+.shoeImage {
+    width: 100%;
+    height: 293px;
+    overflow: hidden;
+}
+
+.shoeImage:hover {
+    border-radius: 15px;
+}
+
+.shoeImage > img {
+    width: 100%;
+    height: 293px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.shoeImage > img:hover {
+    transform: scale(1.1);
+    transition: 0.2s all ease-in-out;
+}
+
+.shoeDetail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.shoeDescription > p {
+    line-height: 20px;
+}
+
+.shoeDescription > p:first-child, .shoeDescription > p:last-child {
+    font-weight: bold;
+}
+
+.shoeDescription > p:nth-child(2), .shoeDescription > p:nth-child(3) {
+    color: rgb(149, 147, 147);
+    font-weight: 600;
+}
+
+.shoppingCartIcon > img {
+    height: 29px;
+}
+
+.shoppingCartIcon > img:hover {
+    transform: scale(1.1);
+}
