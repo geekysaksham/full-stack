@@ -1,0 +1,38 @@
+/* #mainDiv {
+    background-color: rgb(192, 226, 140);
+}
+
+
+.childDiv {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(88, 169, 236);
+    margin: 30px;
+} */
+
+.box1, .box2 {
+    background-color: grey;
+    width: 600px;
+    height: 350px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: peru;
+}
