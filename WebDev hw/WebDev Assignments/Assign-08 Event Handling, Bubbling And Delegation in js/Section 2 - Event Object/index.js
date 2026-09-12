@@ -18,9 +18,9 @@
 
 
 //ques6
-const lang = document.querySelector("#lang");
-const p = document.createElement("p");
-lang.addEventListener("input", (e) => {
-    p.textContent = `You typed: ${e.target.value}`;
-})
-document.body.append(p);
+// const lang = document.querySelector("#lang");
+// const p = document.createElement("p");
+// lang.addEventListener("input", (e) => {
+//     p.textContent = `You typed: ${e.target.value}`;
+// })
+// document.body.append(p);
