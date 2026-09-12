@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Account Creation Form</h1>
+    <form action="" id="form">
+
+        <div>
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name: ">
+            <p class="error-message" style="margin: 2px 0 0 50px; color: red;"></p>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" id="email" placeholder="Enter your Email: ">
+            <p class="error-message" style="margin: 2px 0 0 50px; color: red;"></p>
+        </div>
+        <br>
+
+        <div>
+            <label for="pass">Password : </label>
+            <input type="password" name="pass" id="pass" placeholder="Enter your Password: ">
+            <p id="pass-hint" class="hidden" style="margin: 2px 0 0 120px; font-size: 10px; font-weight: 600;">Must be atleast 8 characters*</p>
+            <p class="error-message" style="margin: 2px 0 0 73px; color: red;"></p>
+        </div>
+        <br>
+
+        <label for="bio">Bio : </label>
+        <div>
+            <textarea name="bio" id="bio" placeholder="Enter your bio...." rows="6" cols="40"></textarea>
+            <p id="char-count" style="margin: 0 0 0 150px;"></p>
+            <p class="error-message" style="margin: 0; color: red;"></p>
+        </div>
+        <br>
+
+        <div>
+            <label for="country">Select your country : </label>
+            <select name="country" id="country">
+                <option value="india">INDIA</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+            <p class="error-message" style="margin: 2px 0 0 50px; color: red;"></p>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="tac" id="tac">
+            <label for="tac">I agree to the terms and conditions.</label>
+            <span class="error-message" style="margin: 0; color: red;"></span>
+        </div>
+        <br>
+
+        <button type="submit" id="btn">Create Account</button>
+    </form>
+
+    <h2 class="hidden" style="color: rgb(115, 0, 255);">Account Created Successfully🎉🎉</h2>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
