@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/10542/10542525.png" type="image/x-icon">
+</head>
+
+<body class="h-screen w-screen flex flex-col justify-center items-center gap-4">
+    <p class="text-4xl font-bold">Password Generator</p>
+    <p id="copyMess" class="pr-3 absolute top-46" ></p>
+    <div class="wrapper bg-[#dff072] w-[30%] h-[65%] flex flex-col justify-center items-center text-center rounded-3xl border-[#EA807B] border-r-8 border-b-8">
+        <div class="flex flex-col gap-5 w-[65%] h-[70%]">
+            <div class="flex w-full gap-2 mt-6">
+                <h1 id="newPass" class="bg-[#e2bdbd] w-full h-10 flex justify-center items-center ml-5"></h1>
+                <i id="copyBtn" class="fa-regular fa-copy text-2xl hover:bg-[#ffffff58] cursor-pointer rounded-2xl p-2" style="color: rgb(0, 0, 0);"></i>
+            </div>
+            <div class="flex mx-auto gap-3 py-3">
+                <input type="range" name="range" id="range" min="6" max="20" value="10">
+                <p id="rangeVal"></p>
+            </div>
+
+            <div class=" h-full text-xl space-y-3">
+                <input type="checkbox" name="capLet" id="capLet" class="cursor-pointer">
+                <label for="capLet">UpperCase</label>
+                <br>
+
+                <input type="checkbox" name="smallLet" id="smallLet" class="cursor-pointer">
+                <label for="smallLet">LowerCase</label>
+                <br>
+
+                <input type="checkbox" name="number" id="number" class="cursor-pointer">
+                <label for="number">Number</label>
+                <br>
+
+                <input type="checkbox" name="symbol" id="symbol" class="cursor-pointer">
+                <label for="symbol">Symbol</label>
+            </div>
+        </div>
+
+        <button id="genPass" class="font-bold bg-amber-400 p-3 hover:bg-amber-500 transition-all duration-200 cursor-pointer">Generate Password</button>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
