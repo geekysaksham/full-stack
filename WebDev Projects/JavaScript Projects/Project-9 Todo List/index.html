@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - JavaScript CRUD</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="wrapper bg-slate-100 h-screen w-screen">
+        <div class="bg-white max-w-md mx-auto rounded-lg">
+            <div class="bg-[#4F45E4] p-5">
+                <h1 class="text-white">Todo App</h1>
+            </div>
+
+
+            <div class="p-5">
+                <form id="todo-form" action="" class="flex gap-5">
+                    <input class="border-2 flex-1 p-2" type="text" name="" id="todo-input" placeholder="Enter task description...">
+                    <button type="submit" class="bg-[#5344E4] text-white px-4 rounded-lg text-sm font-medium">Add</button>
+                </form>
+
+                <div class="flex justify-between pt-6 pb-1 text-xs border-b">
+                    <p>TASKS (1)</p>
+                    <p>COMPLETED: 0</p>
+                </div>
+
+                <ul id="todo-list" class="py-5 flex flex-col gap-3">
+                    <!-- <li data-id="1" class="flex gap-2 border border-slate-300 p-4 rounded-xl">
+                        <input data-id="1" type="checkbox" name="" id="">
+                        <p class="flex-1">Go to Gym</p>
+
+                        <div class="flex gap-2">
+                            <button data-id="1">Edit</button>
+                            <button data-id="1">Delete</button>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
