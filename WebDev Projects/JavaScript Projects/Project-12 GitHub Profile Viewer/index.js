@@ -24,7 +24,7 @@ function displayUser({avatar_url, name, bio, followers, following, public_repos,
     document.getElementById("userProfile").innerHTML = 
                                 `
                                 <div class="flex  flex-col gap-3">
-                                            <div class="rounded-full overflow-hidden w-[90%]"><img class="w-full" src=${avatar_url} alt=""></div>
+                                            <div class="rounded-full border overflow-hidden w-[90%]"><img class="w-full" src=${avatar_url} alt=""></div>
                                             <div class="text-center mr-10">
                                                 <p class="text-4xl">${name}</p>
                                                 <p class="text-md">${bio}</p>
@@ -46,7 +46,7 @@ function displayUser({avatar_url, name, bio, followers, following, public_repos,
                                                     <p>${public_repos}</p>
                                                 </div>
                                             </div>
-                                            <a href = ${html_url} target="_blank" class= "w-full"><div class="text-white bg-[#3B3A3A] w-full px-5 py-2 text-center rounded-full text-xl">View Profile</div></a>
+                                            <a href = ${html_url} target="_blank" class= "w-full"><div class="text-white bg-[#3B3A3A] w-full px-5 py-2 text-center rounded-full text-xl hover:bg-[#0e0d0d]">View Profile</div></a>
                                         </div>
                                 `
 }

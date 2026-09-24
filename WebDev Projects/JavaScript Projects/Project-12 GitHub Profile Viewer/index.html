@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Profile Viewer</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="social-media.png" type="image/x-icon">
 </head>
 <body>
     <div class="main h-screen w-screen flex flex-col justify-center items-center gap-3">
@@ -15,13 +16,13 @@
 
             <div>
                 <input class="border pl-2" type="text" name="username" id="username" placeholder="Enter username">
-                <button class="border px-2 py-0.5 rounded-lg" id="searchBtn">Search</button>
+                <button class="border px-2 py-0.5 rounded-lg hover:bg-amber-400 cursor-pointer" id="searchBtn">Search</button>
             </div>
 
         </div>
 
-        <div class="lowerDiv bg-[#ABF4C3] h-[60%] w-1/2 flex items-center px-4 gap-5 rounded-4xl" id="userProfile">
-
+        <div class="lowerDiv bg-[#ABF4C3] h-[60%] w-1/2 flex items-center px-4 gap-5 rounded-4xl border-4 border-[#0b772f]" id="userProfile">
+            <h1 class="ml-40  font-bold text-5xl">Please search user</h1>
             <!-- <div class="flex  flex-col gap-3">
                 <div class="rounded-full overflow-hidden w-[90%]"><img class="w-full" src="https://avatars.githubusercontent.com/u/121441158?v=4" alt=""></div>
                 <div class="text-center mr-10">
